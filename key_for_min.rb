@@ -2,5 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 hash = [value1: 2, value2: 3, value3: 6]
-array = hash.collect {|key,value| value}
+array = []
+ hash.collect {|key,value| array << value}
+
 puts array 
