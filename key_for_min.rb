@@ -6,7 +6,7 @@ hash = [value1: 4, value2: 1, value3:4]
   array = [hash.collect {|key,value| value}]
   number = array[0]
   array.each do |value|
-    if value <= number
+    if value < number
       value = number
     end
   end
