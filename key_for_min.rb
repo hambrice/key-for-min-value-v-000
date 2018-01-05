@@ -5,6 +5,9 @@ def key_for_min_value(name_hash)
   array = [name_hash.collect {|key,value| value}]
   name_hash.each do |key, value|
     if array.all? do |number|
-       
+       number >= value
+       return key
+     end
+   end
     
 end 
