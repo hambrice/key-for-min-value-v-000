@@ -22,7 +22,7 @@ def key_for_min_value(name_hash)
       value = x
       key = k 
   end
-  return k
+  k
   end 
   
 end
