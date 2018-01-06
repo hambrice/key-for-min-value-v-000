@@ -23,7 +23,7 @@ def key_for_min_value(name_hash)
   end
   end 
   name_hash.each do |key, value|
-    if value = x 
+    if value == x 
       return key
     end
   end
