@@ -21,12 +21,10 @@ def key_for_min_value(name_hash)
     if x == nil || value < x
       value = x
   end
-  value = x
-    if array.all? do |number|
-       number >= x
-     end
-       return key
-     end
- end
-    
-end 
+  end 
+  name_hash.each do |key, value|
+    if value = x 
+      return key
+    end
+  end
+end
